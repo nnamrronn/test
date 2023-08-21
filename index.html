@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J.K.MFG</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!--swiper menu and pictures-->
+    <section class="container swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="images/Graymain-blue.png" alt="" class="image" />
+          <div class="image-info">
+            <span class="text"></span>
+            <h2> J.K.MANUFACTURING, INC.<br />
+              <small>Wholesale Tubing & Wire Parts Manufacturer</small><br /></h2>
+            <a href="about.html" class="button">About Us</a>
+            <a href="newctc.html" class="button">Contact Us</a>
+            <a href="catalog.html" class="button">Our Products</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/tubing parts.png" alt="" class="image" />
+          <div class="image-info">
+            <span class="text">Sterling Silver & Gold Filled.</span>
+            <h2>Tubing Earrings & Parts <br /></h2>
+           <!--- <a href="catalog.html" class="button">Our Products</a>-->
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/Wireparts.png" alt="" class="image" />
+          <div class="image-info">
+            <span class="text">Sterling Silver & Gold Filled.</span>
+            <h2>
+              Wire Parts
+              <br />
+            </h2>
+            <!--<a href="catalog.html" class="button">Our Products</a>-->
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!--swiper script function-->
+    <script src="JS/swiper-bundle.min.js"></script>
+
+    <!--swiper code for pictures-->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
