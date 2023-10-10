@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="css/contact.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>JK contact us</title>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("ZFFVb0AeuOKwsCv35");
+        })();
+    </script>
+
+
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="#" class="nav__logo">
+                    <i class=""></i> JK MANUFACTURING.</a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__toggle-menu"></i>
+                    <i class="ri-close-line nav__toggle-close"></i>
+                </div>
+            </div>
+
+
+
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            Our Catalog <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-flashlight-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Our Products</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">Tubing Parts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Wire Parts</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+
+
+                                <!--=============== DROPDOWN 3 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            Company <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-community-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">About us</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="index.html" class="dropdown__link">Home</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="about.html" class="dropdown__link">About us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+            </div>
+            </div>
+            </li>
+            </ul>
+            </div>
+        
+         </nav>
+    </header>
+    
+
+    <!-- main information -->
+    <div class="info">
+        <h2>JK MANUFACTURING INC.</h2>
+        <span>Tubing and Wire Parts</span>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="address details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="topic">Address</div>
+                    <div class="text-one"><b>115 Forest Ave #22,</b></div>
+                    <div class="text-two"><b>Locust Valley, N.Y. 11560</b></div>
+                </div>
+                <div class="phone details">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one"><b>Line # 1: 212-683-3535</b></div>
+                    <div class="text-two"> <b>Line # 2: 954-722-8573</b><br>
+                        <b>Fax: 954-597-9438</b><br>
+                    <b>Att. hours 8 am to 5 pm Est.<br>
+                Monday - Friday</b></p>
+                    </div>
+                </div>
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one"><b>j.k.mfg@outlook.com</b></div>
+                    <div class="text-two"></div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Send us a Message</div>
+                <p><b>If you are a, manufacturer, wholesaler, large user of sterling silver or gold filled parts and or
+                    hoop earrings,
+                    we have many items that would increase your sales. Email us for more information.</b></p>
+
+                <form onsubmit="sendMail(); reset(); return false;">
+                    <div class="input-box">
+                        <input type="text" name="name" id="name" placeholder="Your name" required />
+                        <input type="email" name="email" id="email" placeholder="Your Email" required />
+                        <textarea id="message" rows="4" placeholder="Your message Here" required></textarea>
+                        <button type="submit">Send Your Message</button>
+                </form>
+               
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+    
+    <!-----FOOTER-->
+    
+    <div class="footer">
+        <div class="row">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+
+        </div>
+
+        <div class="row">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="">Our Products</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            Copyright © JK MANUFACTURING, 2023 - All rights reserved <br> Our 090 - 120 -150 -200 catch is pattented US
+            11,116,293
+        </div>
+    </div>
+    </footer>
+
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="js/main.js"></script>
+
+
+    <!--email js-->
+    <script>
+        function sendMail() {
+            var params = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value,
+            };
+            const ServiceID = "service_t0xlpft";
+            const templateID = "template_kfgyyoc";
+
+            emailjs
+                .send(ServiceID, templateID, params)
+                .then((res) => {
+                    document.getElementById("name").value;
+                    document.getElementById("email").value;
+                    document.getElementById("message").value;
+
+                    console.log(res);
+                    alert("message sent succesfully");
+                })
+
+                .catch((err) => console.log(err));
+        }
+    </script>
+
+</body>
+</html>
